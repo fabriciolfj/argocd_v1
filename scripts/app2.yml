@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: c1-cluster-create
+  name: c2-cluster-create
 spec:
   destination:
     name: ''
@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: mgmt
-    repoURL: 'https://github.com/piomin/sample-kubernetes-cluster-api-argocd.git'
+    repoURL: 'https://github.com/fabriciolfj/argocd_v1.git'
     targetRevision: HEAD
     helm:
       valueFiles:
