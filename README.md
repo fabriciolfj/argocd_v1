@@ -10,4 +10,8 @@
 ### Exportando configuração
 ```
 kind export kubeconfig --name nome do cluster
-``
+```
+
+### Alguns benefícios
+- facil de efetuar rollback
+- podemos separar o repositorio da aplicação do repositório dos manifestos (jenkins faz o build, cria a imagem e atualiza no manifesto, o argo viu que mudou o manifesto e aplica ao kubernetes)
